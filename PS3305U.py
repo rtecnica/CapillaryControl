@@ -7,7 +7,7 @@ class PS3305U:
     TIME_GET_DATA = 70.0 + TIME_DEFAULT
     TIME_GET_IDN  = 300.0 + TIME_DEFAULT
 
-    def __init__(self, port='/dev/tty.usbserial-A9YL9R77'):
+    def __init__(self, port='/dev/tty'):
         # Configuración
         self.ser = serial.Serial(
             port=port,
