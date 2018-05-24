@@ -13,4 +13,5 @@ def Thrust(FlowRate,Power):
     Ve = ExV(FlowRate, Power)
     return Ve*MassFlowRate
 
-
+def Isp(FlowRate,Power):
+    return(ExV(FlowRate,Power)/9.81)
